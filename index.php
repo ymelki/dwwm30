@@ -61,7 +61,9 @@
                 </h5>
                 <p class="card-text"><?=$uneannonce['description'] ?>
                 <br />
-                <a href="supprimer.php?id=<?=$uneannonce['id']?>">SUPPRIMER CE PRODUIT</a>
+                <a href="supprimer.php?id=<?=$uneannonce['id']?>">
+                SUPPRIMER CE PRODUIT
+                </a>
             </div>
             </div>
         </div> 
