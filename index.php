@@ -46,7 +46,11 @@
             <div class="card">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title"><?=$uneannonce['titre'] ?></h5>
+                <h5 class="card-title">
+                    <?=$uneannonce['titre']
+                    // cree un lien en HTML qui envoie l'ID en GET
+                    ?>
+                </h5>
                 <p class="card-text"><?=$uneannonce['description'] ?>
             </div>
             </div>
