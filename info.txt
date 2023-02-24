@@ -1,0 +1,69 @@
+PROJET EN PHP : 
+des titre et des description d'annonces
+
+FRONT : Le code s'execute chez l'utilisateur
+HTML : Structure la page au niveau statique pas besoin de serveur
+CSS : Mise en forme Stylisé statique
+JS : Dynamise le front l'aspect statique
+
+=> Limite : donnée partagée , confidentiel et possible dynamique
+PHP : 1 page (affichant 1 produit) => N pages
+
+Logique  : Algo : if , variables ...
+voir_produit.php
+1. Recuperer le produit de la trotinette 
+ 1.Dans l'URL on transmet la variable correspondant à l'identifiant
+ $_GET ROUTEUR et le CONTROLER
+ 2.Dans la B.D. il recupere les infos (MODELE)
+ 3.il affiche dans une sorte de page HTML CSS ET DU JSS les données de 
+   ce produit (VUE)
+
+Pourquoi MVC 
+Sans MVC : Voir catalogue annonces, une annonce , editer / ajouter une annonce
+1. Créé la B.D Table annonce (ID AUTO INCREMENT , TITRE ,DESCRIPTION ) . 
+2. PHP
+   catalogue.php (lire en B.D. toutes les annonces, qui va les afficher)
+   une_annonce.php (affiche l'annonce sur laquelle on a clicker)
+   ajouter_annonce.php : Formulaire Titre , description
+   enregistrer_annonce.php : enregistrer en BD ce qui a été envoyé en POST
+   Editer annonce.php : Formulaire Titre , description avec les donnée en B.D. de        l'annonce
+   enregistrer_annonce.php : enregistrer en BD ce qui a été envoyé en POST
+   supprimer_annonce.php : quand on aura clicker sur le produit de la page catalogue alors on supprime de la B.D. 
+
+MVC : sans MVC : une_annonce.php?id=1 /une_annonce_1
+1. Routeur : vérifier dans l'URL la page demandé => rediriger vers le bon controller
+SEO : il prefere une URL plus jolie !
+Moins de code , moins de redondance : /n'importe_quoi => 404.php
+Header.php footer.php, Routeur 
+2. Controller : rediriger vers le bon modele (optionnel) et vers la vue !
+3. Modele (optionnel): recuperer les donnée de l'annonce 1 en B.D.
+4. Vue : on affiche la page de l'annonce avec les donnée recupéré
+
+1. Questions ? 2. Des exemples tout fait ! 3. Questions ? 4. Travaillez ! 5. Questions ! 
+=> GIT GITHUB
+
+1. Creez une B.D. que vous nommez DWWM30 => table annonce (ID AUTO INCREMENT , TITRE ,DESCRIPTION ) 
+2. créé une page catalogue.php qui affiche les annonces une page tres simple niveau html pas de css pas de js.
+
+
+Limite sans MVC : 
+Moins de répétition : 
+
+=> Composer , Twig, Doctrine
+ 
+
+B.D. : delete (une ligne), drop (table)
+
+Modele : qui va recuperer 
+Vue : Afficher un produit
+
+
+Serveur Apache : 
+BACKEND : dynamiser le site
+
+Serveur B.D. 
+
+Architecture MVC
+ROUTEUR
+Moteur de template Twig
+ORM DOCTRINE 
