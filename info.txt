@@ -44,7 +44,9 @@ Header.php footer.php, Routeur
 
 1. Creez une B.D. que vous nommez DWWM30 => table annonce (ID AUTO INCREMENT , TITRE ,DESCRIPTION ) 
 2. créé une page catalogue.php qui affiche les annonces une page tres simple niveau html pas de css pas de js.
-
+----
+1.Refaire les exo du jour.
+2.Reperer les limites. Tout le code redondant. Creer une fonction pour la partie redondante et reflechir au MVC , a la securité en SQL, en POO, à composer, TWIG et doctrine.
 
 Limite sans MVC : 
 Moins de répétition : 
