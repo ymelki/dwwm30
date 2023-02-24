@@ -47,9 +47,17 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">
+
+                    <a href=une_annonce.php?id=<?=$uneannonce['id']?>>
                     <?=$uneannonce['titre']
+                    //URL : protocole http
+                    //Adresse IP
+                    //votre fichier ou la route une_annonce.php
+                    //parametre : ?parametre1=XXX&parametre2=yyy&param3=zz
+                    // http://localhost/une_annonce.php
                     // cree un lien en HTML qui envoie l'ID en GET
-                    ?>
+                    ?></a>
+
                 </h5>
                 <p class="card-text"><?=$uneannonce['description'] ?>
             </div>
